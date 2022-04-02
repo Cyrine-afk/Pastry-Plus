@@ -1,0 +1,17 @@
+<RCC>
+    <qresource prefix="/integra">
+        <file>bich2.png</file>
+        <file>login.png</file>
+        <file>moin.png</file>
+        <file>moinhamra.png</file>
+        <file>pastry.jpg</file>
+        <file>pastry.png</file>
+        <file>plus.png</file>
+        <file>plushamra.png</file>
+        <file>Toolery.qss</file>
+        <file>gateau.png</file>
+        <file>pate.png</file>
+        <file>sale.png</file>
+        <file>menu.jpg</file>
+    </qresource>
+</RCC>

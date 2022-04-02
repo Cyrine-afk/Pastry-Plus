@@ -1,0 +1,368 @@
+<<<<<<< HEAD
+--------------------------------------------------------
+--  Fichier créé - jeudi-mai-06-2021   
+--------------------------------------------------------
+--------------------------------------------------------
+--  DDL for Table ACHATS_CLIENTS
+--------------------------------------------------------
+=======
+--------------------------------------------------------
+--  Fichier créé - jeudi-mai-06-2021   
+--------------------------------------------------------
+--------------------------------------------------------
+--  DDL for Table ACHATS_CLIENTS
+--------------------------------------------------------
+>>>>>>> c027b4df40123e8dee25c9c8b68be30707a7e59c
+
+  CREATE TABLE "AHMED"."ACHATS_CLIENTS" 
+   (	"ID_A" NUMBER(15,0) NOT NULL ENABLE, 
+	"ID_E" NUMBER(15,0) NOT NULL ENABLE, 
+	"NOM_C" VARCHAR2(20) NOT NULL ENABLE, 
+	"PRENOM_C" VARCHAR2(20) NOT NULL ENABLE, 
+	"DATE_A" DATE NOT NULL ENABLE, 
+	"PRODUIT" VARCHAR2(20) NOT NULL ENABLE, 
+	"QUANTITE" NUMBER(10,0) NOT NULL ENABLE, 
+	"CONFIRMATION" VARCHAR2(20) NOT NULL ENABLE, 
+	 CONSTRAINT "ACHATS_CLIENTS_PK" PRIMARY KEY ("ID_A")
+  USING INDEX PCTFREE 10 INITRANS 2 MAXTRANS 255 COMPUTE STATISTICS 
+  STORAGE(INITIAL 65536 NEXT 1048576 MINEXTENTS 1 MAXEXTENTS 2147483645
+  PCTINCREASE 0 FREELISTS 1 FREELIST GROUPS 1 BUFFER_POOL DEFAULT)
+  TABLESPACE "SYSTEM"  ENABLE
+   ) PCTFREE 10 PCTUSED 40 INITRANS 1 MAXTRANS 255 NOCOMPRESS LOGGING
+  STORAGE(INITIAL 65536 NEXT 1048576 MINEXTENTS 1 MAXEXTENTS 2147483645
+  PCTINCREASE 0 FREELISTS 1 FREELIST GROUPS 1 BUFFER_POOL DEFAULT)
+<<<<<<< HEAD
+  TABLESPACE "SYSTEM"
+--------------------------------------------------------
+--  DDL for Table COMM_ACHATS
+--------------------------------------------------------
+=======
+  TABLESPACE "SYSTEM"
+--------------------------------------------------------
+--  DDL for Table COMM_ACHATS
+--------------------------------------------------------
+>>>>>>> c027b4df40123e8dee25c9c8b68be30707a7e59c
+
+  CREATE TABLE "AHMED"."COMM_ACHATS" 
+   (	"ID_ACHAT" NUMBER(20,0) NOT NULL ENABLE, 
+	"DATE_AJOUT_ACHAT" DATE NOT NULL ENABLE, 
+	"DATE_LIVR_ACHAT" DATE NOT NULL ENABLE, 
+	"QTE_ING_COM_A" NUMBER(30,0) NOT NULL ENABLE, 
+	"PRIX_ACHAT" FLOAT(126) NOT NULL ENABLE, 
+	"ID_ING_COM_A" NUMBER NOT NULL ENABLE, 
+	"NOM_SOC_ACHAT" VARCHAR2(20) NOT NULL ENABLE, 
+	 CONSTRAINT "COMM_ACHATS_PK" PRIMARY KEY ("ID_ACHAT")
+  USING INDEX PCTFREE 10 INITRANS 2 MAXTRANS 255 COMPUTE STATISTICS 
+  STORAGE(INITIAL 65536 NEXT 1048576 MINEXTENTS 1 MAXEXTENTS 2147483645
+  PCTINCREASE 0 FREELISTS 1 FREELIST GROUPS 1 BUFFER_POOL DEFAULT)
+  TABLESPACE "SYSTEM"  ENABLE
+   ) PCTFREE 10 PCTUSED 40 INITRANS 1 MAXTRANS 255 NOCOMPRESS LOGGING
+  STORAGE(INITIAL 65536 NEXT 1048576 MINEXTENTS 1 MAXEXTENTS 2147483645
+  PCTINCREASE 0 FREELISTS 1 FREELIST GROUPS 1 BUFFER_POOL DEFAULT)
+<<<<<<< HEAD
+  TABLESPACE "SYSTEM"
+--------------------------------------------------------
+--  DDL for Table EMPLOYE
+--------------------------------------------------------
+=======
+  TABLESPACE "SYSTEM"
+--------------------------------------------------------
+--  DDL for Table EMPLOYE
+--------------------------------------------------------
+>>>>>>> c027b4df40123e8dee25c9c8b68be30707a7e59c
+
+  CREATE TABLE "AHMED"."EMPLOYE" 
+   (	"ID" VARCHAR2(20) NOT NULL ENABLE, 
+	"NOM" VARCHAR2(20) NOT NULL ENABLE, 
+	"NUM" VARCHAR2(20) NOT NULL ENABLE, 
+	"MAIL" VARCHAR2(20) NOT NULL ENABLE, 
+	"DATEAD" VARCHAR2(20) NOT NULL ENABLE, 
+	"SEXE" VARCHAR2(20) NOT NULL ENABLE, 
+	"DEPARTEMENT" VARCHAR2(20) NOT NULL ENABLE, 
+	"SALAIRE" VARCHAR2(20) NOT NULL ENABLE, 
+	 CONSTRAINT "EMPLOYE_PK" PRIMARY KEY ("ID")
+  USING INDEX PCTFREE 10 INITRANS 2 MAXTRANS 255 COMPUTE STATISTICS 
+  STORAGE(INITIAL 65536 NEXT 1048576 MINEXTENTS 1 MAXEXTENTS 2147483645
+  PCTINCREASE 0 FREELISTS 1 FREELIST GROUPS 1 BUFFER_POOL DEFAULT)
+  TABLESPACE "SYSTEM"  ENABLE
+   ) PCTFREE 10 PCTUSED 40 INITRANS 1 MAXTRANS 255 NOCOMPRESS LOGGING
+  STORAGE(INITIAL 65536 NEXT 1048576 MINEXTENTS 1 MAXEXTENTS 2147483645
+  PCTINCREASE 0 FREELISTS 1 FREELIST GROUPS 1 BUFFER_POOL DEFAULT)
+<<<<<<< HEAD
+  TABLESPACE "SYSTEM"
+--------------------------------------------------------
+--  DDL for Table FOURNISSEURS
+--------------------------------------------------------
+=======
+  TABLESPACE "SYSTEM"
+--------------------------------------------------------
+--  DDL for Table FOURNISSEURS
+--------------------------------------------------------
+>>>>>>> c027b4df40123e8dee25c9c8b68be30707a7e59c
+
+  CREATE TABLE "AHMED"."FOURNISSEURS" 
+   (	"ID_F" NUMBER(20,0) NOT NULL ENABLE, 
+	"NOM_SOC" VARCHAR2(20) NOT NULL ENABLE, 
+	"TEL_F" NUMBER(20,0) NOT NULL ENABLE, 
+	"EMAIL_F" VARCHAR2(20) NOT NULL ENABLE, 
+	"DATE_ADD_F" DATE NOT NULL ENABLE, 
+	"SPECIALITE_F" VARCHAR2(20) NOT NULL ENABLE, 
+	"ADRESSE_ADD_F" VARCHAR2(50) NOT NULL ENABLE, 
+	 CONSTRAINT "FOURNISSEURS_PK" PRIMARY KEY ("ID_F")
+  USING INDEX PCTFREE 10 INITRANS 2 MAXTRANS 255 COMPUTE STATISTICS 
+  STORAGE(INITIAL 65536 NEXT 1048576 MINEXTENTS 1 MAXEXTENTS 2147483645
+  PCTINCREASE 0 FREELISTS 1 FREELIST GROUPS 1 BUFFER_POOL DEFAULT)
+  TABLESPACE "SYSTEM"  ENABLE
+   ) PCTFREE 10 PCTUSED 40 INITRANS 1 MAXTRANS 255 NOCOMPRESS LOGGING
+  STORAGE(INITIAL 65536 NEXT 1048576 MINEXTENTS 1 MAXEXTENTS 2147483645
+  PCTINCREASE 0 FREELISTS 1 FREELIST GROUPS 1 BUFFER_POOL DEFAULT)
+<<<<<<< HEAD
+  TABLESPACE "SYSTEM"
+--------------------------------------------------------
+--  DDL for Table PRODUIT
+--------------------------------------------------------
+=======
+  TABLESPACE "SYSTEM"
+--------------------------------------------------------
+--  DDL for Table PRODUIT
+--------------------------------------------------------
+>>>>>>> c027b4df40123e8dee25c9c8b68be30707a7e59c
+
+  CREATE TABLE "AHMED"."PRODUIT" 
+   (	"IDENTIFIANT_P" NUMBER, 
+	"NOM_P" VARCHAR2(50) NOT NULL ENABLE, 
+	"QUANTITE_P" NUMBER NOT NULL ENABLE, 
+	"PRIX_P" FLOAT(126) NOT NULL ENABLE, 
+	"TYPE_P" VARCHAR2(50) NOT NULL ENABLE
+   ) PCTFREE 10 PCTUSED 40 INITRANS 1 MAXTRANS 255 NOCOMPRESS LOGGING
+  STORAGE(INITIAL 65536 NEXT 1048576 MINEXTENTS 1 MAXEXTENTS 2147483645
+  PCTINCREASE 0 FREELISTS 1 FREELIST GROUPS 1 BUFFER_POOL DEFAULT)
+<<<<<<< HEAD
+  TABLESPACE "SYSTEM"
+REM INSERTING into AHMED.ACHATS_CLIENTS
+SET DEFINE OFF;
+Insert into AHMED.ACHATS_CLIENTS (ID_A,ID_E,NOM_C,PRENOM_C,DATE_A,PRODUIT,QUANTITE,CONFIRMATION) values (5,88,'pp','oo',to_date('13-01-98','DD-MM-RR'),'Croissant',4,'non');
+Insert into AHMED.ACHATS_CLIENTS (ID_A,ID_E,NOM_C,PRENOM_C,DATE_A,PRODUIT,QUANTITE,CONFIRMATION) values (1,1,'ahmed','missaoui',to_date('03-01-02','DD-MM-RR'),'Gateau',1,'oui');
+Insert into AHMED.ACHATS_CLIENTS (ID_A,ID_E,NOM_C,PRENOM_C,DATE_A,PRODUIT,QUANTITE,CONFIRMATION) values (4,99,'ll','bb',to_date('09-07-08','DD-MM-RR'),'Gateau',11,'oui');
+Insert into AHMED.ACHATS_CLIENTS (ID_A,ID_E,NOM_C,PRENOM_C,DATE_A,PRODUIT,QUANTITE,CONFIRMATION) values (3,3,'ali','mohamed',to_date('01-01-07','DD-MM-RR'),'Gateau',2,'non');
+Insert into AHMED.ACHATS_CLIENTS (ID_A,ID_E,NOM_C,PRENOM_C,DATE_A,PRODUIT,QUANTITE,CONFIRMATION) values (6,999,'att','acc',to_date('04-01-05','DD-MM-RR'),'Gateau',4,'oui');
+Insert into AHMED.ACHATS_CLIENTS (ID_A,ID_E,NOM_C,PRENOM_C,DATE_A,PRODUIT,QUANTITE,CONFIRMATION) values (7,6666,'alo','loul',to_date('01-07-10','DD-MM-RR'),'Croissant',6,'non');
+Insert into AHMED.ACHATS_CLIENTS (ID_A,ID_E,NOM_C,PRENOM_C,DATE_A,PRODUIT,QUANTITE,CONFIRMATION) values (10,10,'fgdsfgdsfsdfg','gfdgsgfdsfd',to_date('06-01-00','DD-MM-RR'),'Croissant',5,'non');
+Insert into AHMED.ACHATS_CLIENTS (ID_A,ID_E,NOM_C,PRENOM_C,DATE_A,PRODUIT,QUANTITE,CONFIRMATION) values (8,8,'tyhtrh','gfhdd',to_date('06-04-02','DD-MM-RR'),'Pain',4,'oui');
+Insert into AHMED.ACHATS_CLIENTS (ID_A,ID_E,NOM_C,PRENOM_C,DATE_A,PRODUIT,QUANTITE,CONFIRMATION) values (9,9,'yjrdtsyt','hgjdfsergeqg',to_date('06-01-06','DD-MM-RR'),'Croissant',5,'non');
+Insert into AHMED.ACHATS_CLIENTS (ID_A,ID_E,NOM_C,PRENOM_C,DATE_A,PRODUIT,QUANTITE,CONFIRMATION) values (11,11,'thtrhsrthrshsr','gsthrsthrqsh',to_date('01-01-00','DD-MM-RR'),'Gateau',4,'oui');
+Insert into AHMED.ACHATS_CLIENTS (ID_A,ID_E,NOM_C,PRENOM_C,DATE_A,PRODUIT,QUANTITE,CONFIRMATION) values (12,12,'ertgege','rgdgrrd',to_date('04-01-00','DD-MM-RR'),'Gateau',3,'oui');
+Insert into AHMED.ACHATS_CLIENTS (ID_A,ID_E,NOM_C,PRENOM_C,DATE_A,PRODUIT,QUANTITE,CONFIRMATION) values (13,13,'grgeregreq','grgdgsresrgseg',to_date('05-01-04','DD-MM-RR'),'Gateau',5,'non');
+Insert into AHMED.ACHATS_CLIENTS (ID_A,ID_E,NOM_C,PRENOM_C,DATE_A,PRODUIT,QUANTITE,CONFIRMATION) values (14,14,'Ã¨uuyjtyjyrtj','yjtjytjtgyjtj',to_date('04-01-04','DD-MM-RR'),'Gateau',6,'non');
+Insert into AHMED.ACHATS_CLIENTS (ID_A,ID_E,NOM_C,PRENOM_C,DATE_A,PRODUIT,QUANTITE,CONFIRMATION) values (15,15,'fgdrrgdrfgd','gergedgedrg',to_date('01-01-00','DD-MM-RR'),'Croissant',5,'oui');
+Insert into AHMED.ACHATS_CLIENTS (ID_A,ID_E,NOM_C,PRENOM_C,DATE_A,PRODUIT,QUANTITE,CONFIRMATION) values (16,16,'gerdgdgrdrg','dgrdgdrgdg',to_date('05-01-00','DD-MM-RR'),'Gateau',8,'non');
+Insert into AHMED.ACHATS_CLIENTS (ID_A,ID_E,NOM_C,PRENOM_C,DATE_A,PRODUIT,QUANTITE,CONFIRMATION) values (17,17,'tetrgegrg','gdgdfgdgdg',to_date('04-05-11','DD-MM-RR'),'Gateau',2,'oui');
+Insert into AHMED.ACHATS_CLIENTS (ID_A,ID_E,NOM_C,PRENOM_C,DATE_A,PRODUIT,QUANTITE,CONFIRMATION) values (18,18,'iuiuouo','iuiuouio',to_date('06-01-11','DD-MM-RR'),'Croissant',5,'oui');
+Insert into AHMED.ACHATS_CLIENTS (ID_A,ID_E,NOM_C,PRENOM_C,DATE_A,PRODUIT,QUANTITE,CONFIRMATION) values (20,20,'euÃ¨','iyiÃ¨yi',to_date('01-01-00','DD-MM-RR'),'Millefeuille',3,'oui');
+Insert into AHMED.ACHATS_CLIENTS (ID_A,ID_E,NOM_C,PRENOM_C,DATE_A,PRODUIT,QUANTITE,CONFIRMATION) values (19,19,'gregd','grgdr',to_date('04-01-00','DD-MM-RR'),'Millefeuille',4,'oui');
+Insert into AHMED.ACHATS_CLIENTS (ID_A,ID_E,NOM_C,PRENOM_C,DATE_A,PRODUIT,QUANTITE,CONFIRMATION) values (21,21,'iiuy','iuyiu',to_date('01-01-00','DD-MM-RR'),'Millefeuille',2,'oui');
+Insert into AHMED.ACHATS_CLIENTS (ID_A,ID_E,NOM_C,PRENOM_C,DATE_A,PRODUIT,QUANTITE,CONFIRMATION) values (22,22,'trryy','yjtjyt',to_date('01-01-00','DD-MM-RR'),'Gateau',3,'oui');
+Insert into AHMED.ACHATS_CLIENTS (ID_A,ID_E,NOM_C,PRENOM_C,DATE_A,PRODUIT,QUANTITE,CONFIRMATION) values (23,23,'jyjgy','jgyjgyj',to_date('01-01-00','DD-MM-RR'),'Gateau',4,'oui');
+Insert into AHMED.ACHATS_CLIENTS (ID_A,ID_E,NOM_C,PRENOM_C,DATE_A,PRODUIT,QUANTITE,CONFIRMATION) values (24,24,'gegregr','grgergr',to_date('01-01-00','DD-MM-RR'),'Millefeuille',3,'oui');
+Insert into AHMED.ACHATS_CLIENTS (ID_A,ID_E,NOM_C,PRENOM_C,DATE_A,PRODUIT,QUANTITE,CONFIRMATION) values (25,25,'thhr','fthfh',to_date('01-01-00','DD-MM-RR'),'Gateau',3,'oui');
+Insert into AHMED.ACHATS_CLIENTS (ID_A,ID_E,NOM_C,PRENOM_C,DATE_A,PRODUIT,QUANTITE,CONFIRMATION) values (27,27,'gergd','rgdgdg',to_date('01-01-00','DD-MM-RR'),'Gateau',3,'oui');
+Insert into AHMED.ACHATS_CLIENTS (ID_A,ID_E,NOM_C,PRENOM_C,DATE_A,PRODUIT,QUANTITE,CONFIRMATION) values (28,28,'yg','jygjgj',to_date('01-01-00','DD-MM-RR'),'Croissant',4,'oui');
+Insert into AHMED.ACHATS_CLIENTS (ID_A,ID_E,NOM_C,PRENOM_C,DATE_A,PRODUIT,QUANTITE,CONFIRMATION) values (29,29,'gdrg','thfthf',to_date('01-01-00','DD-MM-RR'),'Millefeuille',3,'oui');
+Insert into AHMED.ACHATS_CLIENTS (ID_A,ID_E,NOM_C,PRENOM_C,DATE_A,PRODUIT,QUANTITE,CONFIRMATION) values (30,30,'efsfs','fefsfdsf',to_date('01-01-00','DD-MM-RR'),'Millefeuille',2,'oui');
+Insert into AHMED.ACHATS_CLIENTS (ID_A,ID_E,NOM_C,PRENOM_C,DATE_A,PRODUIT,QUANTITE,CONFIRMATION) values (31,31,'rgdrgd','hgfdhgfhg',to_date('01-01-00','DD-MM-RR'),'Gateau',3,'non');
+Insert into AHMED.ACHATS_CLIENTS (ID_A,ID_E,NOM_C,PRENOM_C,DATE_A,PRODUIT,QUANTITE,CONFIRMATION) values (32,32,'ghdgdfg','hfghfhfh',to_date('01-01-00','DD-MM-RR'),'Gateau',2,'oui');
+Insert into AHMED.ACHATS_CLIENTS (ID_A,ID_E,NOM_C,PRENOM_C,DATE_A,PRODUIT,QUANTITE,CONFIRMATION) values (33,33,'gdg','rgdg',to_date('01-01-00','DD-MM-RR'),'Gateau',2,'oui');
+Insert into AHMED.ACHATS_CLIENTS (ID_A,ID_E,NOM_C,PRENOM_C,DATE_A,PRODUIT,QUANTITE,CONFIRMATION) values (34,2,'efsef','frrfdg',to_date('01-01-00','DD-MM-RR'),'Gateau',3,'oui');
+Insert into AHMED.ACHATS_CLIENTS (ID_A,ID_E,NOM_C,PRENOM_C,DATE_A,PRODUIT,QUANTITE,CONFIRMATION) values (35,2,'efsef','frrfdg',to_date('01-01-00','DD-MM-RR'),'Gateau',3,'oui');
+Insert into AHMED.ACHATS_CLIENTS (ID_A,ID_E,NOM_C,PRENOM_C,DATE_A,PRODUIT,QUANTITE,CONFIRMATION) values (36,2,'gdfgfd','grdgdrg',to_date('01-01-00','DD-MM-RR'),'Gateau',3,'oui');
+Insert into AHMED.ACHATS_CLIENTS (ID_A,ID_E,NOM_C,PRENOM_C,DATE_A,PRODUIT,QUANTITE,CONFIRMATION) values (37,2,'gdfgfd','grdgdrg',to_date('01-01-00','DD-MM-RR'),'Gateau',3,'oui');
+Insert into AHMED.ACHATS_CLIENTS (ID_A,ID_E,NOM_C,PRENOM_C,DATE_A,PRODUIT,QUANTITE,CONFIRMATION) values (38,2,'rgrdg','rgdrg',to_date('01-01-00','DD-MM-RR'),'Gateau',2,'non');
+Insert into AHMED.ACHATS_CLIENTS (ID_A,ID_E,NOM_C,PRENOM_C,DATE_A,PRODUIT,QUANTITE,CONFIRMATION) values (39,2,'rgrdg','rgdrg',to_date('01-01-00','DD-MM-RR'),'Gateau',2,'non');
+Insert into AHMED.ACHATS_CLIENTS (ID_A,ID_E,NOM_C,PRENOM_C,DATE_A,PRODUIT,QUANTITE,CONFIRMATION) values (12345678,12345678,'fefesf','efsfes',to_date('01-01-00','DD-MM-RR'),'Gateau',3,'oui');
+REM INSERTING into AHMED.CLIENTS
+SET DEFINE OFF;
+Insert into AHMED.CLIENTS (CIN,NOM,PRENOM,TEL,EMAIL,ADRESSE_LOCALE,DIABETIQUE,AGE,POINT) values (2,'ali','mohamed',123456789,'ali123agz@gmail.com','tunis','oui',30,15);
+Insert into AHMED.CLIENTS (CIN,NOM,PRENOM,TEL,EMAIL,ADRESSE_LOCALE,DIABETIQUE,AGE,POINT) values (12345679,'fesfe','efsef',12345677,'efesfs123@gmail.com','efsfe','non',55,10);
+Insert into AHMED.CLIENTS (CIN,NOM,PRENOM,TEL,EMAIL,ADRESSE_LOCALE,DIABETIQUE,AGE,POINT) values (12345678,'rgdgr','rgdgdg',12345678,'gdrggg123@gmail.com','grgdg','oui',30,10);
+Insert into AHMED.CLIENTS (CIN,NOM,PRENOM,TEL,EMAIL,ADRESSE_LOCALE,DIABETIQUE,AGE,POINT) values (12345676,'rgdg','grdgrd',12345677,'rgdgdg123@gmail.com','efsf','non',33,10);
+Insert into AHMED.CLIENTS (CIN,NOM,PRENOM,TEL,EMAIL,ADRESSE_LOCALE,DIABETIQUE,AGE,POINT) values (1,'ahmed','missa',12345678,'ahmedmi123@gmail.com','tunis','oui',30,5);
+Insert into AHMED.CLIENTS (CIN,NOM,PRENOM,TEL,EMAIL,ADRESSE_LOCALE,DIABETIQUE,AGE,POINT) values (12345644,'esefs','fefsef',32165478,'efsedf112@gmail.com','fesf','non',30,10);
+Insert into AHMED.CLIENTS (CIN,NOM,PRENOM,TEL,EMAIL,ADRESSE_LOCALE,DIABETIQUE,AGE,POINT) values (12345688,'fsfefsf','fefsfsf',32165478,'fefsfef123@gmail.com','efsfesf','oui',30,10);
+Insert into AHMED.CLIENTS (CIN,NOM,PRENOM,TEL,EMAIL,ADRESSE_LOCALE,DIABETIQUE,AGE,POINT) values (12345666,'fsef','rgdg',33322211,'albacd123@gmail.com','efsfesf','oui',25,10);
+REM INSERTING into AHMED.COMM_ACHATS
+SET DEFINE OFF;
+Insert into AHMED.COMM_ACHATS (ID_ACHAT,DATE_AJOUT_ACHAT,DATE_LIVR_ACHAT,QTE_ING_COM_A,PRIX_ACHAT,ID_ING_COM_A,NOM_SOC_ACHAT) values (3,to_date('01-01-12','DD-MM-RR'),to_date('01-01-15','DD-MM-RR'),550,60,3,'Warda');
+Insert into AHMED.COMM_ACHATS (ID_ACHAT,DATE_AJOUT_ACHAT,DATE_LIVR_ACHAT,QTE_ING_COM_A,PRIX_ACHAT,ID_ING_COM_A,NOM_SOC_ACHAT) values (11111111,to_date('01-01-70','DD-MM-RR'),to_date('01-01-90','DD-MM-RR'),321,50,22365478,'Warda');
+Insert into AHMED.COMM_ACHATS (ID_ACHAT,DATE_AJOUT_ACHAT,DATE_LIVR_ACHAT,QTE_ING_COM_A,PRIX_ACHAT,ID_ING_COM_A,NOM_SOC_ACHAT) values (2,to_date('01-01-00','DD-MM-RR'),to_date('01-01-10','DD-MM-RR'),36,50,2,'Enactus');
+Insert into AHMED.COMM_ACHATS (ID_ACHAT,DATE_AJOUT_ACHAT,DATE_LIVR_ACHAT,QTE_ING_COM_A,PRIX_ACHAT,ID_ING_COM_A,NOM_SOC_ACHAT) values (4,to_date('01-01-14','DD-MM-RR'),to_date('01-01-20','DD-MM-RR'),660,80,4,'Warda');
+Insert into AHMED.COMM_ACHATS (ID_ACHAT,DATE_AJOUT_ACHAT,DATE_LIVR_ACHAT,QTE_ING_COM_A,PRIX_ACHAT,ID_ING_COM_A,NOM_SOC_ACHAT) values (5,to_date('01-01-05','DD-MM-RR'),to_date('01-01-20','DD-MM-RR'),963,56,5,'Enactus');
+REM INSERTING into AHMED.CONGE
+SET DEFINE OFF;
+Insert into AHMED.CONGE (ID,NOMEMPLOYE,DATED,DATEF,TYPE) values ('223','fesfe','ven. juil. 7 2023','sam. juil. 6 2024','CONGE MALADIE');
+Insert into AHMED.CONGE (ID,NOMEMPLOYE,DATED,DATEF,TYPE) values ('122','rgdrg','mer. mai 5 2021','mer. mai 5 2021','CONGE PAYE');
+REM INSERTING into AHMED.EMPLOYE
+SET DEFINE OFF;
+Insert into AHMED.EMPLOYE (ID,NOM,NUM,MAIL,DATEAD,SEXE,DEPARTEMENT,SALAIRE) values ('124','rgrdgr','22353333','rgdrg@gmail.com','sam. janv. 1 2000','Femme','efsf','30');
+Insert into AHMED.EMPLOYE (ID,NOM,NUM,MAIL,DATEAD,SEXE,DEPARTEMENT,SALAIRE) values ('123','rgrdgr','22353333','rgdrg@gmail.com','sam. mars 4 2000','Femme','efsf','30');
+Insert into AHMED.EMPLOYE (ID,NOM,NUM,MAIL,DATEAD,SEXE,DEPARTEMENT,SALAIRE) values ('321','fgrgdrg','22353333','agrgrg@gmail.com','sam. mars 4 2000','Homme','depart','20');
+Insert into AHMED.EMPLOYE (ID,NOM,NUM,MAIL,DATEAD,SEXE,DEPARTEMENT,SALAIRE) values ('555','rgdgrdee','53252222','rgdrdg@gmail.com','ven. janv. 4 2002','Femme','tit','55');
+REM INSERTING into AHMED.EVENEMENT
+SET DEFINE OFF;
+Insert into AHMED.EVENEMENT (ID,NOM,DATE_E,LIEU,PRODUIT) values ('123','fgfd','01.01.2000','pttt','tunis');
+REM INSERTING into AHMED.FOURNISSEURS
+SET DEFINE OFF;
+Insert into AHMED.FOURNISSEURS (ID_F,NOM_SOC,TEL_F,EMAIL_F,DATE_ADD_F,SPECIALITE_F,ADRESSE_ADD_F) values (12345678,'Enactus',32165478,'Enactus123@gmail.com',to_date('01-01-00','DD-MM-RR'),'Bio','Ghazela');
+REM INSERTING into AHMED.INGREDIENT
+SET DEFINE OFF;
+REM INSERTING into AHMED.PRODUIT
+SET DEFINE OFF;
+Insert into AHMED.PRODUIT (IDENTIFIANT_P,NOM_P,QUANTITE_P,PRIX_P,TYPE_P) values (123,'eff',30,20,'patee');
+REM INSERTING into AHMED.TICKET
+SET DEFINE OFF;
+--------------------------------------------------------
+--  DDL for Index INGREDIANT_PK
+--------------------------------------------------------
+=======
+  TABLESPACE "SYSTEM"
+REM INSERTING into AHMED.ACHATS_CLIENTS
+SET DEFINE OFF;
+Insert into AHMED.ACHATS_CLIENTS (ID_A,ID_E,NOM_C,PRENOM_C,DATE_A,PRODUIT,QUANTITE,CONFIRMATION) values (5,88,'pp','oo',to_date('13-01-98','DD-MM-RR'),'Croissant',4,'non');
+Insert into AHMED.ACHATS_CLIENTS (ID_A,ID_E,NOM_C,PRENOM_C,DATE_A,PRODUIT,QUANTITE,CONFIRMATION) values (1,1,'ahmed','missaoui',to_date('03-01-02','DD-MM-RR'),'Gateau',1,'oui');
+Insert into AHMED.ACHATS_CLIENTS (ID_A,ID_E,NOM_C,PRENOM_C,DATE_A,PRODUIT,QUANTITE,CONFIRMATION) values (4,99,'ll','bb',to_date('09-07-08','DD-MM-RR'),'Gateau',11,'oui');
+Insert into AHMED.ACHATS_CLIENTS (ID_A,ID_E,NOM_C,PRENOM_C,DATE_A,PRODUIT,QUANTITE,CONFIRMATION) values (3,3,'ali','mohamed',to_date('01-01-07','DD-MM-RR'),'Gateau',2,'non');
+Insert into AHMED.ACHATS_CLIENTS (ID_A,ID_E,NOM_C,PRENOM_C,DATE_A,PRODUIT,QUANTITE,CONFIRMATION) values (6,999,'att','acc',to_date('04-01-05','DD-MM-RR'),'Gateau',4,'oui');
+Insert into AHMED.ACHATS_CLIENTS (ID_A,ID_E,NOM_C,PRENOM_C,DATE_A,PRODUIT,QUANTITE,CONFIRMATION) values (7,6666,'alo','loul',to_date('01-07-10','DD-MM-RR'),'Croissant',6,'non');
+Insert into AHMED.ACHATS_CLIENTS (ID_A,ID_E,NOM_C,PRENOM_C,DATE_A,PRODUIT,QUANTITE,CONFIRMATION) values (10,10,'fgdsfgdsfsdfg','gfdgsgfdsfd',to_date('06-01-00','DD-MM-RR'),'Croissant',5,'non');
+Insert into AHMED.ACHATS_CLIENTS (ID_A,ID_E,NOM_C,PRENOM_C,DATE_A,PRODUIT,QUANTITE,CONFIRMATION) values (8,8,'tyhtrh','gfhdd',to_date('06-04-02','DD-MM-RR'),'Pain',4,'oui');
+Insert into AHMED.ACHATS_CLIENTS (ID_A,ID_E,NOM_C,PRENOM_C,DATE_A,PRODUIT,QUANTITE,CONFIRMATION) values (9,9,'yjrdtsyt','hgjdfsergeqg',to_date('06-01-06','DD-MM-RR'),'Croissant',5,'non');
+Insert into AHMED.ACHATS_CLIENTS (ID_A,ID_E,NOM_C,PRENOM_C,DATE_A,PRODUIT,QUANTITE,CONFIRMATION) values (11,11,'thtrhsrthrshsr','gsthrsthrqsh',to_date('01-01-00','DD-MM-RR'),'Gateau',4,'oui');
+Insert into AHMED.ACHATS_CLIENTS (ID_A,ID_E,NOM_C,PRENOM_C,DATE_A,PRODUIT,QUANTITE,CONFIRMATION) values (12,12,'ertgege','rgdgrrd',to_date('04-01-00','DD-MM-RR'),'Gateau',3,'oui');
+Insert into AHMED.ACHATS_CLIENTS (ID_A,ID_E,NOM_C,PRENOM_C,DATE_A,PRODUIT,QUANTITE,CONFIRMATION) values (13,13,'grgeregreq','grgdgsresrgseg',to_date('05-01-04','DD-MM-RR'),'Gateau',5,'non');
+Insert into AHMED.ACHATS_CLIENTS (ID_A,ID_E,NOM_C,PRENOM_C,DATE_A,PRODUIT,QUANTITE,CONFIRMATION) values (14,14,'Ã¨uuyjtyjyrtj','yjtjytjtgyjtj',to_date('04-01-04','DD-MM-RR'),'Gateau',6,'non');
+Insert into AHMED.ACHATS_CLIENTS (ID_A,ID_E,NOM_C,PRENOM_C,DATE_A,PRODUIT,QUANTITE,CONFIRMATION) values (15,15,'fgdrrgdrfgd','gergedgedrg',to_date('01-01-00','DD-MM-RR'),'Croissant',5,'oui');
+Insert into AHMED.ACHATS_CLIENTS (ID_A,ID_E,NOM_C,PRENOM_C,DATE_A,PRODUIT,QUANTITE,CONFIRMATION) values (16,16,'gerdgdgrdrg','dgrdgdrgdg',to_date('05-01-00','DD-MM-RR'),'Gateau',8,'non');
+Insert into AHMED.ACHATS_CLIENTS (ID_A,ID_E,NOM_C,PRENOM_C,DATE_A,PRODUIT,QUANTITE,CONFIRMATION) values (17,17,'tetrgegrg','gdgdfgdgdg',to_date('04-05-11','DD-MM-RR'),'Gateau',2,'oui');
+Insert into AHMED.ACHATS_CLIENTS (ID_A,ID_E,NOM_C,PRENOM_C,DATE_A,PRODUIT,QUANTITE,CONFIRMATION) values (18,18,'iuiuouo','iuiuouio',to_date('06-01-11','DD-MM-RR'),'Croissant',5,'oui');
+Insert into AHMED.ACHATS_CLIENTS (ID_A,ID_E,NOM_C,PRENOM_C,DATE_A,PRODUIT,QUANTITE,CONFIRMATION) values (20,20,'euÃ¨','iyiÃ¨yi',to_date('01-01-00','DD-MM-RR'),'Millefeuille',3,'oui');
+Insert into AHMED.ACHATS_CLIENTS (ID_A,ID_E,NOM_C,PRENOM_C,DATE_A,PRODUIT,QUANTITE,CONFIRMATION) values (19,19,'gregd','grgdr',to_date('04-01-00','DD-MM-RR'),'Millefeuille',4,'oui');
+Insert into AHMED.ACHATS_CLIENTS (ID_A,ID_E,NOM_C,PRENOM_C,DATE_A,PRODUIT,QUANTITE,CONFIRMATION) values (21,21,'iiuy','iuyiu',to_date('01-01-00','DD-MM-RR'),'Millefeuille',2,'oui');
+Insert into AHMED.ACHATS_CLIENTS (ID_A,ID_E,NOM_C,PRENOM_C,DATE_A,PRODUIT,QUANTITE,CONFIRMATION) values (22,22,'trryy','yjtjyt',to_date('01-01-00','DD-MM-RR'),'Gateau',3,'oui');
+Insert into AHMED.ACHATS_CLIENTS (ID_A,ID_E,NOM_C,PRENOM_C,DATE_A,PRODUIT,QUANTITE,CONFIRMATION) values (23,23,'jyjgy','jgyjgyj',to_date('01-01-00','DD-MM-RR'),'Gateau',4,'oui');
+Insert into AHMED.ACHATS_CLIENTS (ID_A,ID_E,NOM_C,PRENOM_C,DATE_A,PRODUIT,QUANTITE,CONFIRMATION) values (24,24,'gegregr','grgergr',to_date('01-01-00','DD-MM-RR'),'Millefeuille',3,'oui');
+Insert into AHMED.ACHATS_CLIENTS (ID_A,ID_E,NOM_C,PRENOM_C,DATE_A,PRODUIT,QUANTITE,CONFIRMATION) values (25,25,'thhr','fthfh',to_date('01-01-00','DD-MM-RR'),'Gateau',3,'oui');
+Insert into AHMED.ACHATS_CLIENTS (ID_A,ID_E,NOM_C,PRENOM_C,DATE_A,PRODUIT,QUANTITE,CONFIRMATION) values (27,27,'gergd','rgdgdg',to_date('01-01-00','DD-MM-RR'),'Gateau',3,'oui');
+Insert into AHMED.ACHATS_CLIENTS (ID_A,ID_E,NOM_C,PRENOM_C,DATE_A,PRODUIT,QUANTITE,CONFIRMATION) values (28,28,'yg','jygjgj',to_date('01-01-00','DD-MM-RR'),'Croissant',4,'oui');
+Insert into AHMED.ACHATS_CLIENTS (ID_A,ID_E,NOM_C,PRENOM_C,DATE_A,PRODUIT,QUANTITE,CONFIRMATION) values (29,29,'gdrg','thfthf',to_date('01-01-00','DD-MM-RR'),'Millefeuille',3,'oui');
+Insert into AHMED.ACHATS_CLIENTS (ID_A,ID_E,NOM_C,PRENOM_C,DATE_A,PRODUIT,QUANTITE,CONFIRMATION) values (30,30,'efsfs','fefsfdsf',to_date('01-01-00','DD-MM-RR'),'Millefeuille',2,'oui');
+Insert into AHMED.ACHATS_CLIENTS (ID_A,ID_E,NOM_C,PRENOM_C,DATE_A,PRODUIT,QUANTITE,CONFIRMATION) values (31,31,'rgdrgd','hgfdhgfhg',to_date('01-01-00','DD-MM-RR'),'Gateau',3,'non');
+Insert into AHMED.ACHATS_CLIENTS (ID_A,ID_E,NOM_C,PRENOM_C,DATE_A,PRODUIT,QUANTITE,CONFIRMATION) values (32,32,'ghdgdfg','hfghfhfh',to_date('01-01-00','DD-MM-RR'),'Gateau',2,'oui');
+Insert into AHMED.ACHATS_CLIENTS (ID_A,ID_E,NOM_C,PRENOM_C,DATE_A,PRODUIT,QUANTITE,CONFIRMATION) values (33,33,'gdg','rgdg',to_date('01-01-00','DD-MM-RR'),'Gateau',2,'oui');
+Insert into AHMED.ACHATS_CLIENTS (ID_A,ID_E,NOM_C,PRENOM_C,DATE_A,PRODUIT,QUANTITE,CONFIRMATION) values (34,2,'efsef','frrfdg',to_date('01-01-00','DD-MM-RR'),'Gateau',3,'oui');
+Insert into AHMED.ACHATS_CLIENTS (ID_A,ID_E,NOM_C,PRENOM_C,DATE_A,PRODUIT,QUANTITE,CONFIRMATION) values (35,2,'efsef','frrfdg',to_date('01-01-00','DD-MM-RR'),'Gateau',3,'oui');
+Insert into AHMED.ACHATS_CLIENTS (ID_A,ID_E,NOM_C,PRENOM_C,DATE_A,PRODUIT,QUANTITE,CONFIRMATION) values (36,2,'gdfgfd','grdgdrg',to_date('01-01-00','DD-MM-RR'),'Gateau',3,'oui');
+Insert into AHMED.ACHATS_CLIENTS (ID_A,ID_E,NOM_C,PRENOM_C,DATE_A,PRODUIT,QUANTITE,CONFIRMATION) values (37,2,'gdfgfd','grdgdrg',to_date('01-01-00','DD-MM-RR'),'Gateau',3,'oui');
+Insert into AHMED.ACHATS_CLIENTS (ID_A,ID_E,NOM_C,PRENOM_C,DATE_A,PRODUIT,QUANTITE,CONFIRMATION) values (38,2,'rgrdg','rgdrg',to_date('01-01-00','DD-MM-RR'),'Gateau',2,'non');
+Insert into AHMED.ACHATS_CLIENTS (ID_A,ID_E,NOM_C,PRENOM_C,DATE_A,PRODUIT,QUANTITE,CONFIRMATION) values (39,2,'rgrdg','rgdrg',to_date('01-01-00','DD-MM-RR'),'Gateau',2,'non');
+Insert into AHMED.ACHATS_CLIENTS (ID_A,ID_E,NOM_C,PRENOM_C,DATE_A,PRODUIT,QUANTITE,CONFIRMATION) values (12345678,12345678,'fefesf','efsfes',to_date('01-01-00','DD-MM-RR'),'Gateau',3,'oui');
+REM INSERTING into AHMED.CLIENTS
+SET DEFINE OFF;
+Insert into AHMED.CLIENTS (CIN,NOM,PRENOM,TEL,EMAIL,ADRESSE_LOCALE,DIABETIQUE,AGE,POINT) values (2,'ali','mohamed',123456789,'ali123agz@gmail.com','tunis','oui',30,15);
+Insert into AHMED.CLIENTS (CIN,NOM,PRENOM,TEL,EMAIL,ADRESSE_LOCALE,DIABETIQUE,AGE,POINT) values (12345679,'fesfe','efsef',12345677,'efesfs123@gmail.com','efsfe','non',55,10);
+Insert into AHMED.CLIENTS (CIN,NOM,PRENOM,TEL,EMAIL,ADRESSE_LOCALE,DIABETIQUE,AGE,POINT) values (12345678,'rgdgr','rgdgdg',12345678,'gdrggg123@gmail.com','grgdg','oui',30,10);
+Insert into AHMED.CLIENTS (CIN,NOM,PRENOM,TEL,EMAIL,ADRESSE_LOCALE,DIABETIQUE,AGE,POINT) values (12345676,'rgdg','grdgrd',12345677,'rgdgdg123@gmail.com','efsf','non',33,10);
+Insert into AHMED.CLIENTS (CIN,NOM,PRENOM,TEL,EMAIL,ADRESSE_LOCALE,DIABETIQUE,AGE,POINT) values (1,'ahmed','missa',12345678,'ahmedmi123@gmail.com','tunis','oui',30,5);
+Insert into AHMED.CLIENTS (CIN,NOM,PRENOM,TEL,EMAIL,ADRESSE_LOCALE,DIABETIQUE,AGE,POINT) values (12345644,'esefs','fefsef',32165478,'efsedf112@gmail.com','fesf','non',30,10);
+Insert into AHMED.CLIENTS (CIN,NOM,PRENOM,TEL,EMAIL,ADRESSE_LOCALE,DIABETIQUE,AGE,POINT) values (12345688,'fsfefsf','fefsfsf',32165478,'fefsfef123@gmail.com','efsfesf','oui',30,10);
+Insert into AHMED.CLIENTS (CIN,NOM,PRENOM,TEL,EMAIL,ADRESSE_LOCALE,DIABETIQUE,AGE,POINT) values (12345666,'fsef','rgdg',33322211,'albacd123@gmail.com','efsfesf','oui',25,10);
+REM INSERTING into AHMED.COMM_ACHATS
+SET DEFINE OFF;
+Insert into AHMED.COMM_ACHATS (ID_ACHAT,DATE_AJOUT_ACHAT,DATE_LIVR_ACHAT,QTE_ING_COM_A,PRIX_ACHAT,ID_ING_COM_A,NOM_SOC_ACHAT) values (3,to_date('01-01-12','DD-MM-RR'),to_date('01-01-15','DD-MM-RR'),550,60,3,'Warda');
+Insert into AHMED.COMM_ACHATS (ID_ACHAT,DATE_AJOUT_ACHAT,DATE_LIVR_ACHAT,QTE_ING_COM_A,PRIX_ACHAT,ID_ING_COM_A,NOM_SOC_ACHAT) values (11111111,to_date('01-01-70','DD-MM-RR'),to_date('01-01-90','DD-MM-RR'),321,50,22365478,'Warda');
+Insert into AHMED.COMM_ACHATS (ID_ACHAT,DATE_AJOUT_ACHAT,DATE_LIVR_ACHAT,QTE_ING_COM_A,PRIX_ACHAT,ID_ING_COM_A,NOM_SOC_ACHAT) values (2,to_date('01-01-00','DD-MM-RR'),to_date('01-01-10','DD-MM-RR'),36,50,2,'Enactus');
+Insert into AHMED.COMM_ACHATS (ID_ACHAT,DATE_AJOUT_ACHAT,DATE_LIVR_ACHAT,QTE_ING_COM_A,PRIX_ACHAT,ID_ING_COM_A,NOM_SOC_ACHAT) values (4,to_date('01-01-14','DD-MM-RR'),to_date('01-01-20','DD-MM-RR'),660,80,4,'Warda');
+Insert into AHMED.COMM_ACHATS (ID_ACHAT,DATE_AJOUT_ACHAT,DATE_LIVR_ACHAT,QTE_ING_COM_A,PRIX_ACHAT,ID_ING_COM_A,NOM_SOC_ACHAT) values (5,to_date('01-01-05','DD-MM-RR'),to_date('01-01-20','DD-MM-RR'),963,56,5,'Enactus');
+REM INSERTING into AHMED.CONGE
+SET DEFINE OFF;
+Insert into AHMED.CONGE (ID,NOMEMPLOYE,DATED,DATEF,TYPE) values ('223','fesfe','ven. juil. 7 2023','sam. juil. 6 2024','CONGE MALADIE');
+Insert into AHMED.CONGE (ID,NOMEMPLOYE,DATED,DATEF,TYPE) values ('122','rgdrg','mer. mai 5 2021','mer. mai 5 2021','CONGE PAYE');
+REM INSERTING into AHMED.EMPLOYE
+SET DEFINE OFF;
+Insert into AHMED.EMPLOYE (ID,NOM,NUM,MAIL,DATEAD,SEXE,DEPARTEMENT,SALAIRE) values ('124','rgrdgr','22353333','rgdrg@gmail.com','sam. janv. 1 2000','Femme','efsf','30');
+Insert into AHMED.EMPLOYE (ID,NOM,NUM,MAIL,DATEAD,SEXE,DEPARTEMENT,SALAIRE) values ('123','rgrdgr','22353333','rgdrg@gmail.com','sam. mars 4 2000','Femme','efsf','30');
+Insert into AHMED.EMPLOYE (ID,NOM,NUM,MAIL,DATEAD,SEXE,DEPARTEMENT,SALAIRE) values ('321','fgrgdrg','22353333','agrgrg@gmail.com','sam. mars 4 2000','Homme','depart','20');
+Insert into AHMED.EMPLOYE (ID,NOM,NUM,MAIL,DATEAD,SEXE,DEPARTEMENT,SALAIRE) values ('555','rgdgrdee','53252222','rgdrdg@gmail.com','ven. janv. 4 2002','Femme','tit','55');
+REM INSERTING into AHMED.EVENEMENT
+SET DEFINE OFF;
+Insert into AHMED.EVENEMENT (ID,NOM,DATE_E,LIEU,PRODUIT) values ('123','fgfd','01.01.2000','pttt','tunis');
+REM INSERTING into AHMED.FOURNISSEURS
+SET DEFINE OFF;
+Insert into AHMED.FOURNISSEURS (ID_F,NOM_SOC,TEL_F,EMAIL_F,DATE_ADD_F,SPECIALITE_F,ADRESSE_ADD_F) values (12345678,'Enactus',32165478,'Enactus123@gmail.com',to_date('01-01-00','DD-MM-RR'),'Bio','Ghazela');
+REM INSERTING into AHMED.INGREDIENT
+SET DEFINE OFF;
+REM INSERTING into AHMED.PRODUIT
+SET DEFINE OFF;
+Insert into AHMED.PRODUIT (IDENTIFIANT_P,NOM_P,QUANTITE_P,PRIX_P,TYPE_P) values (123,'eff',30,20,'patee');
+REM INSERTING into AHMED.TICKET
+SET DEFINE OFF;
+--------------------------------------------------------
+--  DDL for Index INGREDIANT_PK
+--------------------------------------------------------
+>>>>>>> c027b4df40123e8dee25c9c8b68be30707a7e59c
+
+  CREATE UNIQUE INDEX "AHMED"."INGREDIANT_PK" ON "AHMED"."INGREDIENT" ("IDENTIFIANT_I") 
+  PCTFREE 10 INITRANS 2 MAXTRANS 255 COMPUTE STATISTICS 
+  STORAGE(INITIAL 65536 NEXT 1048576 MINEXTENTS 1 MAXEXTENTS 2147483645
+  PCTINCREASE 0 FREELISTS 1 FREELIST GROUPS 1 BUFFER_POOL DEFAULT)
+<<<<<<< HEAD
+  TABLESPACE "SYSTEM"
+--------------------------------------------------------
+--  DDL for Index CONGE_PK
+--------------------------------------------------------
+=======
+  TABLESPACE "SYSTEM"
+--------------------------------------------------------
+--  DDL for Index CONGE_PK
+--------------------------------------------------------
+>>>>>>> c027b4df40123e8dee25c9c8b68be30707a7e59c
+
+  CREATE UNIQUE INDEX "AHMED"."CONGE_PK" ON "AHMED"."CONGE" ("ID") 
+  PCTFREE 10 INITRANS 2 MAXTRANS 255 COMPUTE STATISTICS 
+  STORAGE(INITIAL 65536 NEXT 1048576 MINEXTENTS 1 MAXEXTENTS 2147483645
+  PCTINCREASE 0 FREELISTS 1 FREELIST GROUPS 1 BUFFER_POOL DEFAULT)
+<<<<<<< HEAD
+  TABLESPACE "SYSTEM"
+--------------------------------------------------------
+--  DDL for Index EVENEMENT_PK
+--------------------------------------------------------
+=======
+  TABLESPACE "SYSTEM"
+--------------------------------------------------------
+--  DDL for Index EVENEMENT_PK
+--------------------------------------------------------
+>>>>>>> c027b4df40123e8dee25c9c8b68be30707a7e59c
+
+  CREATE UNIQUE INDEX "AHMED"."EVENEMENT_PK" ON "AHMED"."EVENEMENT" ("ID") 
+  PCTFREE 10 INITRANS 2 MAXTRANS 255 COMPUTE STATISTICS 
+  STORAGE(INITIAL 65536 NEXT 1048576 MINEXTENTS 1 MAXEXTENTS 2147483645
+  PCTINCREASE 0 FREELISTS 1 FREELIST GROUPS 1 BUFFER_POOL DEFAULT)
+<<<<<<< HEAD
+  TABLESPACE "SYSTEM"
+--------------------------------------------------------
+--  DDL for Index EMPLOYE_PK
+--------------------------------------------------------
+=======
+  TABLESPACE "SYSTEM"
+--------------------------------------------------------
+--  DDL for Index EMPLOYE_PK
+--------------------------------------------------------
+>>>>>>> c027b4df40123e8dee25c9c8b68be30707a7e59c
+
+  CREATE UNIQUE INDEX "AHMED"."EMPLOYE_PK" ON "AHMED"."EMPLOYE" ("ID") 
+  PCTFREE 10 INITRANS 2 MAXTRANS 255 COMPUTE STATISTICS 
+  STORAGE(INITIAL 65536 NEXT 1048576 MINEXTENTS 1 MAXEXTENTS 2147483645
+  PCTINCREASE 0 FREELISTS 1 FREELIST GROUPS 1 BUFFER_POOL DEFAULT)
+<<<<<<< HEAD
+  TABLESPACE "SYSTEM"
+=======
+  TABLESPACE "SYSTEM"
+>>>>>>> c027b4df40123e8dee25c9c8b68be30707a7e59c

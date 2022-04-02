@@ -1,0 +1,14 @@
+<RCC>
+    <qresource prefix="/">
+        <file>nurse.png</file>
+        <file>Diffnes.qss</file>
+        <file>Darkeum.qss</file>
+        <file>../../../A REVOIR/Toolery/Toolery.qss</file>
+        <file>Toolery.qss</file>
+        <file>login.png</file>
+        <file>music.wav</file>
+        <file>pastry.png</file>
+        <file>pastry.jpg</file>
+        <file>bich2.png</file>
+    </qresource>
+</RCC>
