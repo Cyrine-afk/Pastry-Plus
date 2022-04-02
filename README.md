@@ -1,1 +1,2 @@
-# Pastry-Plus
+# Pastry Plus - Desktop Application
+Pastry Shop Management 
